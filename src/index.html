@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Морские круизы</title>
+    <link rel="shortcut icon" href="img/favicon32.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicon32.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <header class="main-page">
+        <div class="container">
+            <nav class="main-nav">
+                <button class="main-nav__btn"></button>
+                <ul class="menu-nav__links">
+                    <li class=""><a href="#" class="menu-nav__link">Популярные маршруты</a></li>
+                    <li class=""><a href="#" class="menu-nav__link">Расписание рейсов</a></li>
+                    <li class=""><a href="#" class="menu-nav__link">Забронированные рейсы</a></li>
+                    <li class=""><a href="#" class="menu-nav__link">Вход для партнеров</a></li>
+                    <li class=""><a href="#" class="menu-nav__link">О компании</a></li>
+                    <li class=""><a href="#" class="menu-nav__link">Контакты</a></li>
+                </ul>
+                <div class="user-account">
+                    <i class="user-account__icon"></i>
+                    <ul class="user-account__lists">
+                        <li class="user-account__list user-account__list--active">Личный кабинет</li>
+                        <li class="user-account__list"></li>
+                        <li class="user-account__list"></li>
+                        <li class="user-account__list"></li>
+                    </ul>
+                    <button class="user-account__btn"></button>
+                </div>
+                <div class="currency">
+                    <i class="currency__icon"></i>
+                    <ul class="currency__lists">
+                        <li class="currency__list currency__list--active">Рубль</li>
+                        <li class="currency__list">$</li>
+                    </ul>
+                    <button class="currency__btn"></button>
+                </div>
+                <div class="language">
+                    <i class="language__icon"></i>
+                    <div class="custom-select">
+                        <select class="language__lists">
+                            <option value="0">Ru</option>
+                            <option value="1">En</option>
+                        </select>
+                    </div>
+                    <button class="language__btn"></button>
+                </div>
+                <div class="service">
+                    <a href="tel:88005006105" type="phone" class="service__phone">8 800 500-61-05</a>
+                    <span class="service__title">Круглосуточная поддержка</span>
+                </div>
+
+            </nav>
+            <picture class="logo-main">
+                <source type="image/svg+xml" srcset="../img/logo.svg" media="(max-width: 640px)">
+                <img src="../img/logo.svg" class="logo-main" alt="Логотип" height="70" width="70">
+            </picture>
+            <h2 class="main-page__title">Морские прогулки</h2>
+            <h1 class="main-page__direction">по чёрному морю</h1>
+            <a href="#catalog" class="main-btn btn">Выбрать круиз</a>
+            <picture>
+                <source type="image/svg+xml" srcset="/img/line-desktop.svg" media="(min-width: 1140px)">
+                <source type="image/svg+xml" srcset="/img/dotted-line.svg" media="(max-width: 640px)">
+                <img src="/img/dotted-line.svg" class="logo-line" alt="Линия" width="50">
+            </picture>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <h2 class="catalog__title">Каталог круизов</h2>
+            <label for="select" class="catalog__label">Сортировать круизы
+                <select id="select" class="catalog__filters">
+                    <option class="catalog__filter catalog__filter--active" selected>по цене</option>
+                    <option class="catalog__filter">по популярности</option>
+                    <option class="catalog__filter">по рейтингу</option>
+                </select>
+            </label>
+            <div class="catalog-wrapper">
+                <article class="tour tour--promoted">
+                    <picture class="tour__img">
+                        <source type="image/svg+xml" srcset="/img/anapa-desktop.jpg" media="(min-width: 1140px)">
+                        <source type="image/svg+xml" srcset="/img/anapa-tablet.jpg" media="(min-width: 730px)">
+                        <img src="/img/tour-lighthouse-1319560.jpg" alt="Анапа" class="tour__img">
+                    </picture>
+
+                    <a class="tour__title" href="#">Морской круиз<br> в Анапу<i class="fas fa-caret-right"></i></a>
+                    <div class="tour__desc">
+                        <span class="highlight">Маршрут</span>: Сочи-Лазаревское- Геленджик-Анапа <br><span class="highlight">Продолжительность</span>:
+                        10 ч. 0 мин.
+                    </div>
+                    <span class="tour__price">49 000 руб.</span>
+                    <div class="badge tour--sales">
+                        Хит продаж
+                    </div>
+                </article>
+                <article class="tour tour--small">
+                    <img src="/img/sochi.jpg" alt="Сочи" class="tour__img">
+                    <a class="tour__title" href="#">Обзорная морская<br> прогулка с экскурсией<i class="fas fa-caret-right"></i></a>
+                    <div class="tour__desc">
+                        <span class="highlight">Маршрут</span>: Сочи-Адлер-Сочи (без высадки)<br><span class="highlight">Продолжительность</span>:
+                        1 ч. 0 мин.
+                    </div>
+                    <span class="tour__price">5 000 руб.</span><span class="tour__price tour__price--discount">15 000
+                        руб.</span>
+                    <div class="badge tour--hit">
+                        Акция
+                    </div>
+                </article>
+                <article class="tour tour--small">
+                    <img src="/img/gelengik.jpg" alt="Геленджик" class="tour__img">
+                    <a class="tour__title" href="#">Морская прогулка<br> в Геленджик<i class="fas fa-caret-right"></i></a>
+                    <div class="tour__desc">
+                        <span class="highlight">Маршрут</span>:Сочи-Туапсе-Геленджик<br><span class="highlight">Продолжительность</span>:
+                        12 ч. 30 мин.
+                    </div>
+                    <span class="tour__price">7 000 руб.</span><span class="tour__price tour__price--discount">10 000
+                        руб.</span>
+                    <div class="badge tour--hit">
+                        скидка 10%
+                    </div>
+                </article>
+                <article class="tour">
+                    <img src="/img/novorossiysk-phone.jpg" alt="Новороссийск" class="tour__img">
+                    <a class="tour__title" href="#">Морской круиз<br> в Новороссийск<i class="fas fa-caret-right"></i></a>
+                    <div class="tour__desc">
+                        <span class="highlight">Маршрут</span>: Сочи-Геленджик-<br>Новороссйиск-Геленджик-Сочи<br><span
+                            class="highlight">Продолжительность</span>:
+                        13 ч. 0 мин.
+                    </div>
+                    <span class="tour__price">14 800 руб.</span>
+                    <div class="badge">
+                    </div>
+                </article>
+                <article class="tour">
+                    <img src="/img/abray-desktop.jpg" alt="Абрау-Дюрсо" class="tour__img">
+                    <a class="tour__title" href="#">Морская прогулка<br> в Абрау-Дюрсо<i class="fas fa-caret-right"></i></a>
+                    <div class="tour__desc">
+                        <span class="highlight">Маршрут</span>: Сочи-Абрау-Дюрс<br><span class="highlight">Продолжительность</span>:
+                        11 ч. 0 мин.
+                    </div>
+                    <span class="tour__price">14 800 руб.</span>
+                    <div class="badge">
+                    </div>
+                </article>
+
+            </div>
+            <article class="template">
+                <div class="template__lib">
+                    <img src="/img/abray-lib-main.jpg" alt="Абрау-Дюрсо" class="lib__img lib__img--main">
+                    <img src="/img/abray-lib-small-1.jpg" alt="Абрау-Дюрсо" class="lib__img">
+                    <img src="/img/abray-lib-small-2.jpg" alt="Абрау-Дюрсо" class="lib__img">
+                    <img src="/img/abray-lib-small-3.jpg" alt="Абрау-Дюрсо" class="lib__img">
+                    <img src="/img/abray-lib-small-4.jpg" alt="Абрау-Дюрсо" class="lib__img">
+                </div>
+                <div class="template__desc">
+                    <a class="tour__title" href="#">Морская прогулка<br> в Абрау-Дюрсо</a>
+                    <div class="tour__desc">
+                        <span class="highlight">Маршрут</span>: Сочи-Абрау-Дюрс<br><span class="highlight">Продолжительность</span>:
+                        11 ч. 0 мин.
+                    </div>
+                    <div class="tour__schedule">
+                        <p class="highlight">Расписание:</p>
+                        Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40<br>
+                        Отправление из Абрау-Дюрсо: ежедневно<br>
+                        в 12:25, 14:05, 15:45, 17:25, 19:05<br>
+                        Продолжительность: 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и обратно), от
+                        1 часа
+                        30 мин. - свободное время в Ласточкином гнезде<br>
+                        Причал отправления/прибытия: набережная Ленина, причал №8, теплоход "Азов"
+                    </div>
+                    <span class="tour__price">14 800 руб.</span>
+                    <a href="#" class="tour__booking btn">Бронирование</a>
+                </div>
+                <button class="tour-close-btn">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="style-scope yt-icon">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                                class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                </button>
+            </article>
+            <a href="#" class="catalog-btn btn">Больше круизов<i class="fas fa-caret-down"></i></a>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <section class="footer__contacts">
+                <a href="#" class="footer__partners">Вход для партнеров</a>
+                <a href="#" class="footer__about">О компании</a>
+                <a href="" class="footer__contact-page">Контакты</a>
+            </section>
+            <section class="footer__social-links">
+                <ul class="social-links__title">Будь на связи:<br>
+                    <li class="social-link"><a href="#"><img src="/img/vk.svg" alt="vk" class="social-link social-link--vk"></a></li>
+                    <li class="social-link"><a href="#"><img src="/img/ok.svg" alt="ok" class="social-link social-link--ok"></a></li>
+                    <li class="social-link"><a href="#"><img src="/img/yt.svg" alt="youtube" class="social-link social-link--yt"></a></li>
+                    <li class="social-link"><a href="#"><img src="/img/insta.svg" alt="instagram" class="social-link social-link--in"></a></li>
+                </ul>
+            </section>
+            <section class="footer-service">
+                <a href="tel:88005006105" type="phone" class="service__phone">8 800 500-61-05</a>
+                <span class="service__title">Круглосуточная поддержка</span>
+                <span class="copy-rights">© 2018 OOO «Городские Круизы»</span>
+            </section>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
