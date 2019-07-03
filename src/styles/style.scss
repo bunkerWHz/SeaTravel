@@ -379,6 +379,11 @@ body {
 
     }
 }
+.break-line {
+    @media screen and (min-width: 1140px) {
+        display: none;
+    }
+}
 .tour {
     background-color: #ffffff;
     position: relative;
