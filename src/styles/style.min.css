@@ -52,7 +52,7 @@ table {
   --main-lb-color: #33c7fd;
   --main-lbh-color: #13b0e9;
   --main-lba-color: #64d6ff;
-  --tablet: 730px;
+  --tablet: 720px;
   --desktop: 1140px; }
 
 body {
@@ -65,7 +65,7 @@ body {
   width: 290px;
   margin: 0 auto; }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 720px) {
   .container {
     width: var(--tablet); } }
 
@@ -77,8 +77,7 @@ body {
   background: url(/img/mob-bg-main-sochi.jpg) no-repeat bottom;
   background-size: cover;
   height: 583px;
-  padding: 26px 15px 0 15px;
-  margin-bottom: 63px;
+  padding: 26px 15px 0;
   box-sizing: border-box;
   position: relative; }
   .main-page__title {
@@ -86,14 +85,14 @@ body {
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 22px; }
+    margin-bottom: 16px; }
   .main-page__direction {
     color: var(--main-h-color);
     font-family: 'Roboto Slab', serif;
     font-size: 50px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 39px;
     line-height: 48px; }
     @media screen and (min-width: 730px) {
       .main-page__direction {
@@ -101,7 +100,7 @@ body {
     @media screen and (min-width: 1140px) {
       .main-page__direction {
         margin-bottom: 57px; } }
-  @media screen and (min-width: 730px) {
+  @media screen and (min-width: 720px) {
     .main-page {
       background-image: url(/img/sochi-bg-tablet.jpg); } }
   @media screen and (min-width: 1140px) {
@@ -141,7 +140,7 @@ body {
       top: 0px; }
     .main-nav__btn::after {
       top: 0px; }
-  @media screen and (min-width: 730px) {
+  @media screen and (min-width: 720px) {
     .main-nav {
       height: 30px;
       width: 100%;
@@ -153,11 +152,11 @@ body {
 
 .user-account, .currency, .language, .service {
   display: none; }
-  @media screen and (min-width: 730px) {
+  @media screen and (min-width: 720px) {
     .user-account, .currency, .language, .service {
       display: initial; } }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 720px) {
   .user-account {
     margin-left: auto;
     display: inline-block;
@@ -187,7 +186,7 @@ body {
 .user-account__btn, .currency__btn, .language__btn {
   display: none; }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 720px) {
   .service {
     margin-right: 20px;
     display: flex;
@@ -244,7 +243,7 @@ body {
   color: #ffffff;
   padding: 33px 0 0 24px;
   z-index: 10; }
-  @media screen and (min-width: 730px) {
+  @media screen and (min-width: 720px) {
     .menu-nav__links {
       width: 420px;
       padding: 73px 0 0 44px; } }
@@ -267,9 +266,9 @@ body {
   width: 70px;
   height: 70px;
   margin: 0 auto;
-  margin-top: -22px;
-  margin-bottom: 15px; }
-  @media screen and (min-width: 730px) {
+  margin-top: -18px;
+  margin-bottom: 13px; }
+  @media screen and (min-width: 720px) {
     .logo-main {
       margin-top: 83px; } }
   @media screen and (min-width: 1140px) {
@@ -297,7 +296,8 @@ body {
     background-color: var(--main-lba-color); }
 
 .main-btn {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  letter-spacing: 1.3px; }
   @media screen and (min-width: 1140px) {
     .main-btn {
       margin-bottom: 18px; } }
@@ -312,15 +312,16 @@ body {
       height: 308px; } }
 
 .catalog {
-  padding: 0 15px;
+  padding: 52px 15px 0;
   background-color: #f3f3f3; }
   .catalog__title {
     color: var(--main-h-color);
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 15px; }
-    @media screen and (min-width: 730px) {
+    margin-bottom: 9px;
+    letter-spacing: 1px; }
+    @media screen and (min-width: 720px) {
       .catalog__title {
         font-size: 26px; } }
     @media screen and (min-width: 1140px) {
@@ -358,9 +359,8 @@ body {
 .catalog-wrapper {
   display: grid;
   grid-gap: 20px;
-  margin-bottom: 20px;
-  grid-auto-rows: 464px; }
-  @media screen and (min-width: 730px) {
+  grid-auto-rows: 466px; }
+  @media screen and (min-width: 720px) {
     .catalog-wrapper {
       grid-gap: 25px 30px;
       grid-template-columns: 345px 345px;
@@ -381,13 +381,15 @@ body {
   background-color: #ffffff;
   position: relative;
   box-sizing: border-box; }
+  .tour--tablet {
+    display: none; }
   .tour__img {
     width: 100%;
     max-width: 555px;
     height: 228px;
     margin: 0 auto;
-    margin-bottom: 30px; }
-    @media screen and (min-width: 730px) {
+    margin-bottom: 23px; }
+    @media screen and (min-width: 720px) {
       .tour__img {
         height: 272px; } }
     @media screen and (min-width: 1140px) {
@@ -409,7 +411,9 @@ body {
     font-size: 18px;
     position: relative;
     margin-left: 22px;
-    margin-bottom: 15px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
     cursor: pointer; }
     .tour__title:hover {
       color: var(--main-lbh-color); }
@@ -419,20 +423,23 @@ body {
     color: var(--main-h-color);
     font-family: 'Raleway', serif;
     font-size: 14px;
+    letter-spacing: 1.4px;
     line-height: 24px;
     text-align: left;
     margin-left: 22px;
-    margin-bottom: 21px; }
+    margin-bottom: 16px; }
   .tour__price {
     color: var(--main-h-color);
     margin-left: 20px;
-    margin-right: 3px;
+    margin-right: 6px;
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    letter-spacing: 1.5px; }
     .tour__price--discount {
       font-size: 18px;
+      letter-spacing: 0;
       text-decoration: line-through;
       color: #7a8f9f;
       margin: 0; }
@@ -445,7 +452,10 @@ body {
     margin-left: 10px; }
 
 .catalog-btn {
-  padding: 0 38px; }
+  margin-top: 20px;
+  padding: 0;
+  padding-left: 28px;
+  letter-spacing: 1.4px; }
 
 .highlight {
   font-weight: bold; }
@@ -464,15 +474,17 @@ body {
   color: #ffffff;
   box-sizing: border-box;
   top: -7px;
-  right: 50px;
-  mask: url(/img/badge.svg) no-repeat; }
+  right: 23px;
+  mask: url("/img/badge.svg") no-repeat; }
 
 .main-footer {
   padding-top: 30px;
   height: 200px;
   box-sizing: border-box;
   background-color: #ffffff; }
-  @media screen and (min-width: 730px) {
+  .main-footer__title {
+    text-align: center; }
+  @media screen and (min-width: 720px) {
     .main-footer .container {
       display: flex;
       flex-direction: row; } }
@@ -485,7 +497,7 @@ body {
   font-size: 14px;
   color: var(--main-h-color);
   margin-bottom: 20px; }
-  @media screen and (min-width: 730px) {
+  @media screen and (min-width: 720px) {
     .footer__contacts {
       display: initial; } }
 
@@ -499,23 +511,22 @@ body {
   margin-bottom: 10px;
   cursor: pointer; }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 720px) {
   .footer__social-links {
     width: 220px; } }
 
-.social-links__title {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Raleway", serif;
-  font-size: 14px;
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
   margin-bottom: 20px; }
-  @media screen and (min-width: 730px) {
-    .social-links__title {
+  @media screen and (min-width: 720px) {
+    .social-links {
       text-align-last: left; } }
 
 .social-link {
-  margin-top: 10px;
+  margin-right: 15px;
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -526,7 +537,7 @@ body {
   margin-left: auto;
   display: flex;
   flex-direction: column; }
-  @media screen and (min-width: 730px) {
+  @media screen and (min-width: 720px) {
     .footer-service {
       width: 260px;
       text-align-last: left; } }
@@ -574,7 +585,7 @@ body {
   width: 320px;
   padding: 15px;
   background-color: #ffffff; }
-  @media screen and (min-width: 730px) {
+  @media screen and (min-width: 720px) {
     .template {
       width: 721px;
       height: 691px;
@@ -585,7 +596,7 @@ body {
     flex-direction: column;
     left: calc(100vw/2 - 320px/2);
     top: 10vh; }
-    @media screen and (min-width: 730px) {
+    @media screen and (min-width: 720px) {
       .template--opened {
         left: calc(50% - 721px/2);
         top: 10vh;
@@ -599,7 +610,7 @@ body {
     grid-gap: 5px;
     grid-template-rows: 44px;
     grid-auto-rows: 44px; }
-    @media screen and (min-width: 730px) {
+    @media screen and (min-width: 720px) {
       .template__lib {
         margin: 0; } }
   .template .lib__img {
@@ -654,7 +665,7 @@ body {
     display: inline-block;
     text-align: start;
     box-sizing: border-box; }
-    @media screen and (min-width: 730px) {
+    @media screen and (min-width: 720px) {
       .template .tour-close-btn {
         width: 30px;
         height: 30px; } }
