@@ -37,12 +37,13 @@ body {
 .main-page {
     background: url(/img/mob-bg-main-sochi.jpg) no-repeat bottom;
     background-size: cover;
-    height: 583px;
-    padding: 26px 15px 0;
+    height: 586px;
+    padding: 30px 15px 0;
     box-sizing: border-box;
     position: relative;
     &__title {
         color: var(--main-h-color);
+        letter-spacing: 1px;
         font-family: 'Roboto Slab', serif;
         font-size: 20px;
         text-align: center;
@@ -52,6 +53,7 @@ body {
         color: var(--main-h-color);
         font-family: 'Roboto Slab', serif;
         font-size: 50px;
+        letter-spacing: -1px;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 39px;
