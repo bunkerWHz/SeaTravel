@@ -1,0 +1,109 @@
+.main-footer {
+    padding-top: 23px;
+    height: 200px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    &__title {
+        text-align: center;
+color: #0d3351;
+font-family: "Raleway";
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 1.3px;
+    }
+        @media screen and (min-width: 720px) {
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .footer__contacts {
+        display: none;
+        width: 280px;
+        text-align: left;
+        font-family: "Raleway", serif;
+        font-size: 14px;
+        color: var(--main-h-color);
+        margin-bottom: 20px;
+        @media screen and (min-width: 720px) {
+            display: initial;
+        }
+    }
+    .footer__partners, .footer__about, .footer__contact-page {
+        text-decoration: none;
+        text-align: left;
+        color: var(--main-h-color);
+        font-family: "Raleway", serif;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .footer__social-links {
+        @media screen and (min-width: 720px) {
+        width: 220px;
+        }
+    }
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        @media screen and (min-width: 720px) { 
+            text-align-last: left;
+        }
+        .social {
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+            &__link {
+                text-decoration: none;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                color: var(--main-h-color);
+                cursor: pointer;
+            }
+        }
+    }
+   
+    .footer-service {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 12px;
+        @media screen and (min-width: 720px) { 
+            width: 260px;
+            text-align-last: left;
+        }
+    }
+    .service__phone {
+        text-align: center;
+        font-family: "Raleway", serif;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 4px;
+        color: var(--main-h-color);
+        line-height: 24px;
+        letter-spacing: 2.2px;
+    }
+    .service__title {
+        text-align: center;
+        font-family: "Raleway", serif;
+        font-size: 13px;
+        letter-spacing: -0.3px;
+        margin-bottom: 10px;
+        color: var(--main-h-color);
+    }
+    .copy-rights {
+        font-family: "Raleway", serif;
+        font-size: 14px;
+        text-align: center;
+        color: var(--main-h-color);
+        letter-spacing: 1.2px;
+    }
+}

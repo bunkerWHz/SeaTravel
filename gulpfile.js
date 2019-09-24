@@ -7,12 +7,20 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const server = require('browser-sync').create();
 sass.compiler = require('node-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 
 gulp.task('style', () => {
+const plugins = [
+        autoprefixer({browsers: ['last 1 version']}),
+        cssnano()
+    ];
 
   return gulp.src('./src/styles/*.scss')
   .pipe(plumber())
   .pipe(sass.sync().on('error', sass.logError))
+.pipe(postcss(plugins))
   .pipe(gulp.dest('./src/styles/'))
   .pipe(rename({suffix: ".min",}))
   .pipe(gulp.dest('./src/styles/'))

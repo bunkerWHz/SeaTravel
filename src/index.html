@@ -69,11 +69,6 @@
             <h2 class="main-page__title">Морские прогулки</h2>
             <h1 class="main-page__direction">по чёрному морю</h1>
             <a href="#catalog" class="main-btn btn">Выбрать круиз</a>
-            <picture>
-                <source type="image/svg+xml" srcset="/img/line-desktop.svg" media="(min-width: 1140px)">
-                <source type="image/svg+xml" srcset="/img/dotted-line.svg" media="(max-width: 640px)">
-                <img src="/img/dotted-line.svg" class="logo-line" alt="Линия" width="50">
-            </picture>
         </div>
     </header>
     <section class="catalog" id="catalog">
@@ -101,7 +96,7 @@
                     </div>
                     <span class="tour__price">49 000 руб.</span>
                     <div class="badge tour--sales">
-                        Хит продаж
+                        <span class="badge__title">Хит продаж</span>
                     </div>
                 </article>
                 <article class="tour tour--small">
@@ -142,17 +137,7 @@
                     <div class="badge">
                     </div>
                 </article>
-                <article class="tour">
-                    <img src="/img/abray-desktop.jpg" alt="Абрау-Дюрсо" class="tour__img">
-                    <a class="tour__title" href="#">Морская прогулка<br> в Абрау-Дюрсо<i class="fas fa-caret-right"></i></a>
-                    <div class="tour__desc">
-                        <span class="highlight">Маршрут</span>: Сочи-Абрау-Дюрс<br><span class="highlight">Продолжительность</span>:
-                        11 ч. 0 мин.
-                    </div>
-                    <span class="tour__price">14 800 руб.</span>
-                    <div class="badge">
-                    </div>
-                </article>
+   
 
             </div>
             <article class="template tour--tablet">
@@ -204,17 +189,17 @@
             </section>
             <section class="footer__social-links">
                 <div class="main-footer__title">Будь на связи:</div>
-                <ul class="social-links">
-                    <li class="social-link"><a href="#"><img src="/img/vk.svg" alt="vk" class="social-link social-link--vk"></a></li>
-                    <li class="social-link"><a href="#"><img src="/img/ok.svg" alt="ok" class="social-link social-link--ok"></a></li>
-                    <li class="social-link"><a href="#"><img src="/img/yt.svg" alt="youtube" class="social-link social-link--yt"></a></li>
-                    <li class="social-link"><a href="#"><img src="/img/insta.svg" alt="instagram" class="social-link social-link--in"></a></li>
+                <ul class="socials">
+                    <li class="social"><a href="#"><img src="/img/vk.svg" alt="vk" class="social__link social__link--vk"></a></li>
+                    <li class="social"><a href="#"><img src="/img/ok.svg" alt="ok" class="social__link social__link--ok"></a></li>
+                    <li class="social"><a href="#"><img src="/img/yt.svg" alt="youtube" class="social__link social__link--yt"></a></li>
+                    <li class="social"><a href="#"><img src="/img/insta.svg" alt="instagram" class="social__link social__link--in"></a></li>
                 </ul>
             </section>
             <section class="footer-service">
                 <a href="tel:88005006105" type="phone" class="service__phone">8 800 500-61-05</a>
-                <span class="service__title">Круглосуточная поддержка</span>
-                <span class="copy-rights">© 2018 OOO «Городские Круизы»</span>
+                <div class="service__title">Круглосуточная поддержка</div>
+                <div class="copy-rights">© 2018 OOO «Городские Круизы»</div>
             </section>
         </div>
     </footer>
