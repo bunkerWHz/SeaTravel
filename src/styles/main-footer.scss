@@ -11,6 +11,9 @@ font-size: 14px;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 1.3px;
+@media screen and (min-width: 720px) {
+    text-align: left;
+}
     }
         @media screen and (min-width: 720px) {
         .container {
@@ -27,7 +30,10 @@ letter-spacing: 1.3px;
         color: var(--main-h-color);
         margin-bottom: 20px;
         @media screen and (min-width: 720px) {
-            display: initial;
+            display: flex;
+            flex-direction: column;
+            width: 170px;
+            margin-bottom: 0;
         }
     }
     .footer__partners, .footer__about, .footer__contact-page {
@@ -78,6 +84,7 @@ letter-spacing: 1.3px;
         @media screen and (min-width: 720px) { 
             width: 260px;
             text-align-last: left;
+            margin: 0;
         }
         .service__phone {
             text-align: center;

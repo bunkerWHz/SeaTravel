@@ -12,8 +12,8 @@
         bottom: -57px;
         display: inline-block;
         height: 238px;
-        width: 45px;
-        background-image: url(/img/dotted-line.svg);
+        width: 48px;
+        background-image: url(/img/320_main-page_line.svg);
         background-repeat: no-repeat;
         background-color: transparent;
     }
@@ -24,6 +24,14 @@
         font-size: 20px;
         text-align: center;
         margin-bottom: 16px;
+        @media screen and (min-width: 720px) {
+            font-size: 26px;
+            letter-spacing: 1.3px;
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width: 1301px) {
+            font-size: 36px;
+        }
     }
     &__direction {
         color: var(--main-h-color);
@@ -34,17 +42,22 @@
         text-align: center;
         margin-bottom: 39px;
         line-height: 48px;
-        @media screen and (min-width: 730px) {
-            padding-bottom: 23px;
+        @media screen and (min-width: 720px) {
+            margin-bottom: 27px;
+            font-size: 72px;
+            letter-spacing: -1.9px;
         }
         @media screen and (min-width: 1301px) {
-            padding-bottom: 57px;
+            margin-bottom: 57px;
         }
     }
     @media screen and (min-width: 720px) {
         background-image: url(/img/sochi-bg-tablet.jpg);
         height: 600px;
-
+        &:after {
+            left: calc(48% - 7px);
+            bottom: -54px;
+        }
     }
     @media screen and (min-width: 1301px) {
         background-image: url(/img/sochi-bg-desktop.jpg);
@@ -270,7 +283,8 @@ line-height: 10px;
         margin-top: -18px;
         margin-bottom: 13px;
         @media screen and (min-width: 720px) {
-            margin-top: 83px;
+            margin-top: 88px;
+            margin-bottom: 11px;
         }
         @media screen and (min-width: 1301px) {
             margin-top: 25px;
@@ -280,6 +294,9 @@ line-height: 10px;
     .main-btn {
         margin-bottom: 24px;
         letter-spacing: 1.3px;
+        @media screen and (min-width: 720px) {
+        letter-spacing: 0.7px;
+        }
         @media screen and (min-width: 1301px) {
             margin-bottom: 18px;
         }

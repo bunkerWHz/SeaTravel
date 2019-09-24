@@ -1,6 +1,15 @@
 .catalog {
     padding: 52px 15px 0;
     background-color: #f3f3f3;
+    .container{
+        padding-bottom: 30px;
+    }
+    @media screen and (min-width: 720px) {
+        padding:60px 0 0;
+        .container {
+            padding-bottom: 62px;
+        }
+    }
     &__title {
         color: var(--main-h-color);
         font-family: 'Roboto Slab', serif;
@@ -36,6 +45,9 @@
         appearance: none; 
         &:hover {
             background-color: #fff;
+        }
+        @media screen and (min-width: 720px) {
+            margin-bottom: 34px;
         }
     }
     &__filter {
@@ -122,6 +134,10 @@
             &:active {
                 color: var(--main-lba-color);
             }
+            @media screen and (min-width: 720px) {
+                margin-left: 31px;
+                margin-right: 20px;
+            }
         }
         &__desc {
             color: var(--main-h-color);
@@ -132,6 +148,9 @@
             text-align: left;
             margin-left: 22px;
             margin-bottom: 16px; 
+            @media screen and (min-width: 720px) {
+                margin-left: 33px;
+            }
         }
         &__price {
             color: var(--main-h-color);
@@ -142,6 +161,9 @@
             text-align: center;
             font-weight: bold;
             letter-spacing: 1.5px;
+            @media screen and (min-width: 720px) {
+                margin-left: 33px;
+            }
             &--discount {
                 font-size: 18px;
                 letter-spacing: 0;
@@ -167,7 +189,7 @@
         padding: 0;
     padding-left: 24px;
     letter-spacing: 1.4px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     }
     .highlight {
        font-weight: bold;
@@ -196,6 +218,9 @@
             text-transform: uppercase;
             letter-spacing: 0.7px;
             margin-top: -11px;
+        }
+        @media screen and (min-width: 720px) {
+            right: 32px;
         }
     }
     
