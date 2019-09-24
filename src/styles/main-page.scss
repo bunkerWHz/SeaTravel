@@ -2,7 +2,7 @@
     background: url(/img/mob-bg-main-sochi.jpg) no-repeat bottom;
     background-size: cover;
     height: 583px;
-    padding: 26px 15px 0;
+    padding: 25px 0 0;
     box-sizing: border-box;
     position: relative;
     &:after {
@@ -35,55 +35,59 @@
         margin-bottom: 39px;
         line-height: 48px;
         @media screen and (min-width: 730px) {
-            margin-bottom: 23px;
+            padding-bottom: 23px;
         }
-        @media screen and (min-width: 1140px) {
-            margin-bottom: 57px;
+        @media screen and (min-width: 1301px) {
+            padding-bottom: 57px;
         }
     }
     @media screen and (min-width: 720px) {
         background-image: url(/img/sochi-bg-tablet.jpg);
+        height: 600px;
+
     }
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1301px) {
         background-image: url(/img/sochi-bg-desktop.jpg);
-        margin-bottom: 118px;
+        height: 600px;
     }
     .main-nav {
-        width: 22px;
         height: 16px;
         display: inline-block;
         box-sizing: border-box;
         position: relative;
-        &__btn {
-            position: absolute;
-            top: 0;
-            left: 0;
+        align-items: flex-end;
+        .hamburger {
+            margin-top: 9px;
             width: 22px;
+            padding: 0;
             height: 16px;
+            align-self:flex-start;
             box-sizing: border-box;
             background-color: transparent;
             border: none;
             font-size: 0;
+            display: flex;
+            margin-right: auto;
+            margin-left: 0;
             cursor: pointer;
             outline: none;
-            &::before {
-                content: '';
-                display: block;
+            position: relative;
+            &__line {
+                width: 22px;
+                height: 1px;
+                display: inline-block;
                 position: absolute;
                 left: 0;
-                width: 22px;
-                height: 2px;
-                background-color: #325673;
-                box-shadow: 1px solid var(--main-h-color);
-                box-shadow: 
-                0 8px 0 0 var(--main-h-color), 
-                0 16px 0 0 var(--main-h-color);
-            }
-            &::before {
-                top: 0px;
-            }
-            &::after {
-                top: 0px;
+                background-color:  var(--main-h-color);
+                &--top {
+                    top: 0;
+                }
+                &--middle {
+                    top: 7px;
+                }
+                &--bottom {
+                    bottom: 0;
+                }
             }
         }
         @media screen and (min-width: 720px) { 
@@ -105,20 +109,23 @@
     .user-account {
         @media screen and (min-width: 720px) {
         margin-left: auto;
-        display: inline-block;
-        margin-right: 50px;
+        margin-right: 54px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
         &__icon {
             display: inline-block;
-            vertical-align: top;
             background: url(/img/user.svg) no-repeat;
             height: 12px;
             width: 10px;
-            margin-right: 6px;
+            margin-right: 3px;
         }
         &__lists {
             display: inline-block;
         }
         &__list {
+            display: none;
             &--active {
                 display: inline-block;
                 position: relative;
@@ -126,7 +133,7 @@
                     position: absolute;
                     content: "";
                     top: 7px;
-                    right: -12px;
+                    right: -15px;
                     width: 0;
                     height: 0;
                     border: 4px solid transparent;
@@ -141,27 +148,49 @@
         display: none;
     }
     .service {
+        &__phone {
+            text-decoration: none;
+color: var(--main-h-color);
+font-family: "Raleway";
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 2.2px;
+margin-left: auto;
+line-height: 20px;
+margin-right: 13px;
+        }
+        &__title {
+            color: var(--main-h-color);
+            font-family: "Raleway";
+            font-size: 10px;
+font-weight: 400;
+letter-spacing: 1.1px;
+line-height: 10px;
+        }
         @media screen and (min-width: 720px) {
-            margin-right: 20px;
+            margin-right: 0;
            display: flex;
            flex-direction: column;
+           align-items: center;
+           justify-items: flex-end;
         }
     
     }
     .currency {
-        margin-right: 40px;
+        margin-right: 45px;
         &__icon {
             display: inline-block;
             background: url(/img/Р.svg) no-repeat;
             height: 12px;
             width: 10px;
-            margin-right: 6px;
+            margin-right: 4px;
         }
         &__lists{
             display: inline-block;
         }
         &__list {
             display: none;
+            letter-spacing: 1.5px;
             &--active {
                 display: initial;
                 position: relative;
@@ -169,7 +198,7 @@
                     position: absolute;
                     content: "";
                     top: 7px;
-                    right: -12px;
+                    right: -14px;
                     width: 0;
                     height: 0;
                     border: 4px solid transparent;
@@ -182,7 +211,7 @@
     
     
     .language {
-        margin-right: 50px;
+        margin-right: 34px;
         .custom-select {
             .language__lists {
                 background-color: transparent;
@@ -243,7 +272,7 @@
         @media screen and (min-width: 720px) {
             margin-top: 83px;
         }
-        @media screen and (min-width: 1140px) {
+        @media screen and (min-width: 1301px) {
             margin-top: 25px;
         }
     }
@@ -251,7 +280,7 @@
     .main-btn {
         margin-bottom: 24px;
         letter-spacing: 1.3px;
-        @media screen and (min-width: 1140px) {
+        @media screen and (min-width: 1301px) {
             margin-bottom: 18px;
         }
     }
@@ -259,7 +288,7 @@
         display: block;
         margin: 0 auto;
         height: 223px;
-        @media screen and (min-width: 1140px) {
+        @media screen and (min-width: 1301px) {
             width: 61px;
             height: 308px;
         }

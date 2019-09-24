@@ -79,31 +79,32 @@ letter-spacing: 1.3px;
             width: 260px;
             text-align-last: left;
         }
+        .service__phone {
+            text-align: center;
+            font-family: "Raleway", serif;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 2px;
+            color: var(--main-h-color);
+            line-height: 24px;
+            letter-spacing: 2.2px;
+        }
+        .service__title {
+            text-align: center;
+            font-family: "Raleway", serif;
+            font-size: 13px;
+            letter-spacing: -0.3px;
+            margin-bottom: 12px;
+            color: var(--main-h-color);
+        }
+        .copyrights {
+            font-family: "Raleway", serif;
+            font-size: 14px;
+            text-align: center;
+            color: var(--main-h-color);
+            letter-spacing: 1.2px;
+        }
     }
-    .service__phone {
-        text-align: center;
-        font-family: "Raleway", serif;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 4px;
-        color: var(--main-h-color);
-        line-height: 24px;
-        letter-spacing: 2.2px;
-    }
-    .service__title {
-        text-align: center;
-        font-family: "Raleway", serif;
-        font-size: 13px;
-        letter-spacing: -0.3px;
-        margin-bottom: 10px;
-        color: var(--main-h-color);
-    }
-    .copy-rights {
-        font-family: "Raleway", serif;
-        font-size: 14px;
-        text-align: center;
-        color: var(--main-h-color);
-        letter-spacing: 1.2px;
-    }
+
 }
