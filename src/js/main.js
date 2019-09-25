@@ -1,4 +1,4 @@
-const mainMenu = document.querySelector(".main-nav__btn");
+const mainMenu = document.querySelector(".hamburger");
 const nav = document.querySelector(".menu-nav__links");
 const overlay = document.querySelector(".overlay");
 const tour = document.querySelectorAll(".tour");
@@ -7,7 +7,6 @@ const galleryLib = template.querySelectorAll('.lib__img');
 const mainBtn = document.querySelector('.main-btn');
 const catalog = document.getElementById('catalog');
 const tourCloseBtn = template.querySelector('.tour-close-btn');
-
 function setTop (height) {
     template.style.top = height + "px";
 }

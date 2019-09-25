@@ -86,7 +86,7 @@
         background-color: #ffffff;
         position: relative;
         box-sizing: border-box;
-        &--tablet {
+        &--desktop {
             display: none;
         }
         &__img{
@@ -109,6 +109,9 @@
                 .tour__img {
                     height: 437px;
                 }
+            }
+            &--desktop {
+                display: block;
             }
             &--small {
                 .tour__img {

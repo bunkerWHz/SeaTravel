@@ -11,10 +11,15 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
+
 gulp.task('style', () => {
 const plugins = [
-        autoprefixer({browsers: ['last 1 version']}),
-        cssnano()
+        autoprefixer(),
+        cssnano(),
+	require("postcss-uncss")({
+html: "./src/index.html",
+css: "./src/*.css"
+})
     ];
 
   return gulp.src('./src/styles/*.scss')
@@ -47,9 +52,10 @@ gulp.task('serve', () => {
   server.init({
     server: "./src/"
   });
-  gulp.watch('./src/styles/**.*{scss, css}', gulp.parallel('style'));
-});
+  gulp.watch('./src/styles/**.*{scss, css}', gulp.parallel('style')).on('change', server.reload);
+  gulp.watch('./src/*.html').on('change', server.reload);
 
+});
 
 
 gulp.task('default', gulp.parallel('serve', 'style'));
